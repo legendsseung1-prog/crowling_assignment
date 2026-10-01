@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, "Malgun Gothic", sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+form {
+  margin: 30px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.search-row {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #aaa;
+  font: inherit;
+}
+
+button {
+  padding: 10px 18px;
+  border: 1px solid #888;
+  background: #eee;
+  font: inherit;
+  cursor: pointer;
+}
+
+section {
+  margin-top: 35px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.job-list {
+  padding: 0;
+  list-style: none;
+}
+
+.job-card {
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.job-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.job-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.job-card a {
+  display: inline-block;
+  margin-top: 6px;
+  color: #0645ad;
+}
