@@ -1,4 +1,4 @@
-"""인크루트 검색 결과에서 채용공고를 가져온다."""
+"""인크루트 검색 결과에서 채용공고를 가져옴"""
 
 from urllib.parse import parse_qs, urljoin, urlparse
 
@@ -37,7 +37,7 @@ def _posting_id(href: str) -> str | None:
 
 
 def parse_incruit_html(html: str | bytes) -> list[JobPosting]:
-    """인크루트의 검색 결과 카드들을 공통 공고 목록으로 바꾼다."""
+    """인크루트의 검색 결과 카드들을 공통 공고 목록으로 바꿈"""
     soup = BeautifulSoup(html, "html.parser")
     postings: list[JobPosting] = []
     seen_ids: set[str] = set()
@@ -76,7 +76,7 @@ def search_incruit(
     session=None,
     timeout: int = 10,
 ) -> list[JobPosting]:
-    """검색어로 인크루트 공고를 조회한다."""
+    """검색어로 인크루트 공고를 조회"""
     client = session or requests
     response = client.get(
         SEARCH_URL,
